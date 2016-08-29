@@ -1,5 +1,5 @@
 ---
-title: "An introduction to this lesson"
+title: "A really quick introduction to BIDS"
 teaching: 5
 exercises: 0
 questions:
