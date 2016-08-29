@@ -1,15 +1,26 @@
 ---
-title: "Wrap-Up"
+title: "Introduction to Nipype dataflows"
 teaching: 15
-exercises: 0
+exercises: 15
 questions:
-- "What have we learned?"
+- "How do write a Nipype dataflow?"
 objectives:
-- "Recap what you've learned"
+- "Learn to write a simple dataflow"
 keypoints:
-- "A summary of everything so far"
+- "Nipype can be a powerful tool for writing dataflows"
+- "Nipype is verbose, but that's for your own good"
 ---
 
-## Markdown again
+## Quickest introduction to Nipype dataflows
 
-Write what you would like to say in the summary.
+## A `Workflow` with a `Function` `Node`
+
+## A two-node `Workflow`
+
+## Introducing `iterables`
+
+## Introducing `MapNode` and `JoinNode`
+
+## Introducing Nipype interfaces
+
+## Introducing `DataGrabber` and `DataSink`
