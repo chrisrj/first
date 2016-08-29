@@ -1,7 +1,7 @@
 ---
 title: "Validating BIDS data structures"
-teaching: 2.5
-exercises: 2.5
+teaching: 2
+exercises: 3
 questions:
 - "How do I make sure I converted to BIDS?"
 objectives:
