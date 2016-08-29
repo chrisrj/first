@@ -1,20 +1,20 @@
 ---
-title: "A second part"
+title: "Converting DICOM data to BIDS"
 teaching: 5
-exercises: 5
+exercises: 15
 questions:
-- "Can we break up the lesson into multiple parts?"
+- "How do I convert my data to BIDS?"
 objectives:
-- "See that you can have more than one part for the lesson"
+- "Understand that different software have different requirements"
+- "Learn to create a heuristic file for your study"
 keypoints:
-- "We can add parts to the lesson, by adding more markdown files"
-- "You get the picture"
+- "Automate conversion of DICOM data to BIDS"
+- "The specification is still the key source of information"
 ---
 
-## Same as before
+## What is Heudiconv?
+[Heudiconv](https://github.com/nipy/heudiconv) is a **heuristic based** dicom converter.
 
-Use markdown to write the content.
+## Install Heudiconv and it's requirements (or use docker or singularity or vagrant or ...)?
 
-Note that if you set up the `teaching` and `exercises` timing in the file
-header, the timing will automatically get updated in the schedule for your
-lesson. Pretty nifty, innit?
+## Create your heuristic file?
