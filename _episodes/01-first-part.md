@@ -1,25 +1,22 @@
 ---
 title: "An introduction to this lesson"
-teaching: 15
+teaching: 5
 exercises: 0
 questions:
-- "What do we need a template for?"
+- "What do we need [BIDS](bids.neuroimaging.io) for?"
 objectives:
-- "Edit lesson materials in the template"
-- "Contribute fixes through Github PRs"
-- "Use the template to create your own lesson"
+- "Learn how standardizing helps"
+- "Standardize your own work"
 keypoints:
-- We want to use this template to provide lesson materials in an open and useful format.
-
-- This is in line with our overall goal of making science (including scientific training) more open.
+- Storing scientific data in an open and useful format.
+- This is in line with our overall goal of making science more structured and reproducible.
 
 ---
 
-### Neurohackweek is *open*
+### BIDS is an *open* specification
 
-The Neurohackweek event can only accomodate a limited number of participants.
-Nevertheless, we are committed to openess and we are committed to providing our
-materials in an open format, through a publicly accessible website.
+[BIDS](bids.neuroimaging.io) is a specification for structuring data from brain imaging experiments
+in a standardized manner.
 
 ### Using a template allows to create websites for each of the lectures
 
