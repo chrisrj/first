@@ -9,7 +9,7 @@ kind: "lesson"
 title: "Dataflows for Neurohackweek"
 
 # Repository URL (without trailing slash).
-repo: https://github.com/satra/lesson-dataflows
+repo: https://github.com/neurohackweek/lesson-dataflows
 
 # Root URL below username.github.io domain, with leading slash but no trailing slash.
 # For example, for 'https://neurohackweek.github.io/lesson-example', use '/lesson-example'.
