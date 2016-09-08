@@ -54,6 +54,26 @@ Let's consider converting only the t1 and the resting series
 - First create keys
 - Then use the information from dicominfo.txt to fill those keys.
 
+---
+    t1 = create_key('anat/sub-{subject}_T1w')
+    rest = create_key('func/sub-{subject}_dir-{acq}_task-rest_run-{item:02d}_bold')
+
+    info = {t1: [], rest: []}
+    last_run = len(seqinfo)
+    for s in seqinfo:
+        print(s)
+        # TODO: clean it up -- unused stuff laying around
+        x, y, sl, nt = (s[6], s[7], s[8], s[9])
+        if (sl == 176) and (nt == 1) and ('t1' in s[12]):
+            info[t1] = [s[2]]
+        if (nt > 10) and ('taskrest' in s[12]):
+            if s[13]:
+                info[rest].append({'item': s[2], 'acq': 'corrected'})
+    return info
+---
+{: .python}
+
+
 ```
 docker run --rm -it -v $PWD:/data nipy/heudiconv -d /data/%s/YAROSLAV_DBIC-TEST1/HEAD_ADVANCED_APPLICATIONS_LIBRARIES_20160824_104430_780000/*/*IMA -s PHANTOM1_3 -f /data/heuristic_2type.py -c dcm2niix -b -o /data/output
 ```
