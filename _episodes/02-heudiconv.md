@@ -54,7 +54,7 @@ Let's consider converting only the t1 and the resting series
 - First create keys
 - Then use the information from dicominfo.txt to fill those keys.
 
----
+~~~
     t1 = create_key('anat/sub-{subject}_T1w')
     rest = create_key('func/sub-{subject}_dir-{acq}_task-rest_run-{item:02d}_bold')
 
@@ -70,7 +70,7 @@ Let's consider converting only the t1 and the resting series
             if s[13]:
                 info[rest].append({'item': s[2], 'acq': 'corrected'})
     return info
----
+~~~
 {: .python}
 
 
